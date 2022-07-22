@@ -4,6 +4,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiLab", "MauiLab\MauiLab.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiLab.Tests", "MauiLab.Tests\MauiLab.Tests.csproj", "{4BEB3A05-35BC-464D-B9B2-E0B4B3372AD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiLab.SpecFlow.Tests", "MauiLab.SpecFlow.Tests\MauiLab.SpecFlow.Tests.csproj", "{1975DE1D-2FB1-442B-82E3-CE37C883E27B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{966C8D15-563C-4F05-9611-D5A330B1671A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D71D7B0A-BC15-4C11-B344-D0761422989C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +24,14 @@ Global
 		{4BEB3A05-35BC-464D-B9B2-E0B4B3372AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BEB3A05-35BC-464D-B9B2-E0B4B3372AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BEB3A05-35BC-464D-B9B2-E0B4B3372AD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1975DE1D-2FB1-442B-82E3-CE37C883E27B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1975DE1D-2FB1-442B-82E3-CE37C883E27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1975DE1D-2FB1-442B-82E3-CE37C883E27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1975DE1D-2FB1-442B-82E3-CE37C883E27B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0DDD1E47-40FA-4901-BABF-E114C0326FDE} = {966C8D15-563C-4F05-9611-D5A330B1671A}
+		{4BEB3A05-35BC-464D-B9B2-E0B4B3372AD2} = {D71D7B0A-BC15-4C11-B344-D0761422989C}
+		{1975DE1D-2FB1-442B-82E3-CE37C883E27B} = {D71D7B0A-BC15-4C11-B344-D0761422989C}
 	EndGlobalSection
 EndGlobal
