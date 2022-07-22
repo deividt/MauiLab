@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiLab", "MauiLab\MauiLab.csproj", "{0DDD1E47-40FA-4901-BABF-E114C0326FDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiLab.Tests", "MauiLab.Tests\MauiLab.Tests.csproj", "{4BEB3A05-35BC-464D-B9B2-E0B4B3372AD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{0DDD1E47-40FA-4901-BABF-E114C0326FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DDD1E47-40FA-4901-BABF-E114C0326FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DDD1E47-40FA-4901-BABF-E114C0326FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BEB3A05-35BC-464D-B9B2-E0B4B3372AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BEB3A05-35BC-464D-B9B2-E0B4B3372AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BEB3A05-35BC-464D-B9B2-E0B4B3372AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BEB3A05-35BC-464D-B9B2-E0B4B3372AD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
