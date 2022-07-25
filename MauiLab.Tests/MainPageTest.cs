@@ -1,4 +1,6 @@
 using FluentAssertions;
+using MauiLab.Views;
+using Moq.AutoMock;
 
 namespace MauiLab.Tests;
 
@@ -8,7 +10,9 @@ public class MainPageTest
     public void MainPage_Counter_Button_Text_Should_Be()
     {
         // Arrange
-        var sut = new MainPage();
+        var mocker = new AutoMocker();
+        mocker.CreateInstance<MainPage>();
+        var sut = mocker.GetMock<MainPage>().Object;
 
         // Act
         var countButton = sut.FindByName<Button>("CounterBtn");
