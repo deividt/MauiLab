@@ -1,9 +1,5 @@
 ﻿using CommunityToolkit.Maui;
-using MauiLab.Services;
-using MauiLab.Services.Interfaces;
-using MauiLab.ViewModels;
-using MauiLab.Views;
-
+using MauiLab.Extensions;
 namespace MauiLab;
 
 public static class MauiProgram
@@ -18,12 +14,9 @@ public static class MauiProgram
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-            });
-
-        builder.Services.AddTransient<MainViewModel>();
-        builder.Services.AddTransient<MainPage>();
-
-        builder.Services.AddSingleton<IConnectivityService, ConnectivityService>();
+            })
+            .RegisterServices()
+            .RegisterPages();
 
         return builder.Build();
     }

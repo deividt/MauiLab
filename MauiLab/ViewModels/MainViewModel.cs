@@ -3,7 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace MauiLab.ViewModels;
 
-public partial class MainViewModel : ObservableObject
+public partial class MainViewModel : BaseViewModel
 {
     [ObservableProperty]
     private int _count;
