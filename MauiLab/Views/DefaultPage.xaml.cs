@@ -1,8 +1,8 @@
 ﻿namespace MauiLab.Views;
 
-public partial class MainPage : ContentPage
+public partial class DefaultPage : ContentPage
 {
-    public MainPage()
+    public DefaultPage()
     {
         InitializeComponent();
     }

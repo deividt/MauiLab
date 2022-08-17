@@ -1,10 +1,15 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using MauiLab.Constants;
 
 namespace MauiLab.ViewModels;
 
-public partial class MainViewModel : BaseViewModel
+public partial class MainPageViewModel : BaseViewModel
 {
+    public MainPageViewModel(INavigationService navigationService) : base(navigationService)
+    {
+    }
+    
     [ObservableProperty]
     private int _count;
     
@@ -15,8 +20,8 @@ public partial class MainViewModel : BaseViewModel
     }
 
     [ICommand]
-    async Task CheckConnectivity()
+    async Task NextPage()
     {
-        await Shell.Current.GoToAsync("ERROR!!");
+        await Navigation.NavigateAsync(Routes.Default);
     }
 }
