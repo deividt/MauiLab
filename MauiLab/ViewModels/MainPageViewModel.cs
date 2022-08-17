@@ -3,8 +3,12 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace MauiLab.ViewModels;
 
-public partial class MainViewModel : BaseViewModel
+public partial class MainPageViewModel : BaseViewModel
 {
+    public MainPageViewModel(INavigationService navigationService) : base(navigationService)
+    {
+    }
+    
     [ObservableProperty]
     private int _count;
     
@@ -17,6 +21,6 @@ public partial class MainViewModel : BaseViewModel
     [ICommand]
     async Task CheckConnectivity()
     {
-        await Shell.Current.GoToAsync("ERROR!!");
+        await Task.CompletedTask;
     }
 }

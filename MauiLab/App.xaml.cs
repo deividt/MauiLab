@@ -2,10 +2,8 @@
 
 public partial class App : Application
 {
-    public App(AppShell mainPage)
+    public App()
     {
         InitializeComponent();
-
-        MainPage = mainPage;
     }
 }

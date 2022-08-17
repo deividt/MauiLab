@@ -1,10 +1,8 @@
-﻿using MauiLab.ViewModels;
+﻿namespace MauiLab.Views;
 
-namespace MauiLab.Views;
-
-public partial class MainPage : BasePage
+public partial class MainPage : ContentPage
 {
-    public MainPage(MainViewModel viewModel) : base(viewModel)
+    public MainPage()
     {
         InitializeComponent();
     }

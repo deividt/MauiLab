@@ -61,6 +61,7 @@
     <ItemGroup>
       <PackageReference Include="CommunityToolkit.Maui" Version="1.2.0" />
       <PackageReference Include="CommunityToolkit.Mvvm" Version="7.1.2" />
+      <PackageReference Include="Prism.DryIoc.Maui" Version="8.1.273-pre" />
     </ItemGroup>
 
     <ItemGroup>
