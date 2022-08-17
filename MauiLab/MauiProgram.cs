@@ -42,8 +42,8 @@ public static class MauiProgram
     
     private static IContainerRegistry RegisterPages(this IContainerRegistry container)
     {
-        //container.RegisterForNavigation<MainPage, MainViewModel>();
         container.RegisterForNavigation<MainPage>();
+        container.RegisterForNavigation<DefaultPage>();
         return container;
     }
 }
