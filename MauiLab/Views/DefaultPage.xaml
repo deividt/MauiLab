@@ -15,7 +15,8 @@
                 Text="This is a template page!"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"/>
 
             <Button
                 Text="Go Back"

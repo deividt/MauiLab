@@ -36,11 +36,16 @@
                 FontAttributes="Bold"
                 HorizontalOptions="Center" />
 
-            <Button 
+            <Button
                 x:Name="CounterBtn"
                 Text="Click me"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Command="{Binding IncrementCountCommand }"
+                HorizontalOptions="Center" />
+            
+            <Button
+                Text="Next Page"
+                Command="{Binding NextPageCommand }"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>

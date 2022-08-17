@@ -1,5 +1,6 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using MauiLab.Constants;
 
 namespace MauiLab.ViewModels;
 
@@ -19,8 +20,8 @@ public partial class MainPageViewModel : BaseViewModel
     }
 
     [ICommand]
-    async Task CheckConnectivity()
+    async Task NextPage()
     {
-        await Task.CompletedTask;
+        await Navigation.NavigateAsync(Routes.Default);
     }
 }

@@ -20,9 +20,9 @@ public static class MauiProgram
                     container.RegisterServices();
                     container.RegisterPages();
                 });
-                prism.OnAppStart(Routes.Main);
-                // prism.OnAppStart(async navigation => 
-                //     await navigation.NavigateAsync($"{Routes.Navigation}/{Routes.Main}"));
+                //prism.OnAppStart(Routes.Main);
+                prism.OnAppStart(async navigation => 
+                    await navigation.NavigateAsync($"{Routes.Navigation}/{Routes.Main}"));
             })
             .UseMauiCommunityToolkit()
             .ConfigureFonts(fonts =>
