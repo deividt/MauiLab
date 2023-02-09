@@ -13,14 +13,14 @@ public partial class MainPageViewModel : BaseViewModel
     [ObservableProperty]
     private int _count;
     
-    [ICommand]
+    [RelayCommand]
     private void IncrementCount()
     {
         Count++;
     }
 
-    [ICommand]
-    async Task NextPage()
+    [RelayCommand]
+    private async Task NextPage()
     {
         await Navigation.NavigateAsync(Routes.Default);
     }

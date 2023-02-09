@@ -8,7 +8,7 @@ public partial class DefaultPageViewModel : BaseViewModel
     {
     }
 
-    [ICommand]
+    [RelayCommand]
     private async Task GoBack()
     {
         await Navigation.GoBackAsync();
