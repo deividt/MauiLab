@@ -4,7 +4,7 @@ namespace MauiLab.ViewModels;
 
 public abstract partial class BaseViewModel : ObservableObject
 {
-    public BaseViewModel(INavigationService navigationService)
+    protected BaseViewModel(INavigationService navigationService)
     {
         Navigation = navigationService;
     }
@@ -14,5 +14,5 @@ public abstract partial class BaseViewModel : ObservableObject
     [ObservableProperty]
     private bool _isBusy;
     
-    public bool IsNotBusy => !_isBusy;
+    public bool IsNotBusy => !IsBusy;
 }
