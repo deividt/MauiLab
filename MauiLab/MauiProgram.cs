@@ -1,8 +1,9 @@
-﻿using CommunityToolkit.Maui;
+using CommunityToolkit.Maui;
 using MauiLab.Constants;
 using MauiLab.Services;
 using MauiLab.Services.Interfaces;
 using MauiLab.Views;
+using Microsoft.Extensions.Configuration;
 
 namespace MauiLab;
 
@@ -10,6 +11,10 @@ public static class MauiProgram
 {
     public static MauiApp CreateMauiApp()
     {
+        IConfiguration config = new ConfigurationBuilder()
+            .AddJsonFile("appsettings.json")
+            .Build();
+
         var builder = MauiApp.CreateBuilder();
         builder
             .UseMauiApp<App>()
@@ -31,6 +36,7 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
 
+        builder.Configuration.AddConfiguration(config);
         return builder.Build();
     }
 
