@@ -48,6 +48,11 @@
                 Command="{Binding NextPageCommand }"
                 HorizontalOptions="Center" />
 
+            <Button
+                Text="Syncfusion Popup Page"
+                Command="{Binding SyncfusionPopupCommand }"
+                HorizontalOptions="Center" />
+
         </VerticalStackLayout>
     </ScrollView>
  

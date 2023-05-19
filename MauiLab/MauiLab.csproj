@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFrameworks>net7.0;net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
@@ -64,6 +64,9 @@
       <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.4" />
       <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
       <PackageReference Include="Prism.DryIoc.Maui" Version="8.1.273-pre" />
+      <PackageReference Include="Syncfusion.Licensing" Version="21.1.39" />
+      <PackageReference Include="Syncfusion.Maui.Core" Version="21.1.39" />
+      <PackageReference Include="Syncfusion.Maui.Popup" Version="21.1.39" />
     </ItemGroup>
 
     <ItemGroup>
@@ -87,7 +90,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="appsettings.debug.json" />
+      <EmbeddedResource Include="appsettings.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
     </ItemGroup>
 
 </Project>
