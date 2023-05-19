@@ -1,9 +1,10 @@
-using CommunityToolkit.Maui;
+﻿using CommunityToolkit.Maui;
 using MauiLab.Constants;
 using MauiLab.Services;
 using MauiLab.Services.Interfaces;
 using MauiLab.Views;
 using Microsoft.Extensions.Configuration;
+using Syncfusion.Maui.Core.Hosting;
 
 namespace MauiLab;
 
@@ -30,6 +31,7 @@ public static class MauiProgram
                     await navigation.NavigateAsync($"{Routes.Navigation}/{Routes.Main}"));
             })
             .UseMauiCommunityToolkit()
+            .ConfigureSyncfusionCore()
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
